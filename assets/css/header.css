@@ -1,0 +1,104 @@
+header{
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* لوغو */
+img{
+    height: 210px;
+    width: 250px;
+    margin-top: 20px;
+}
+/* الستيل تاع ناف بار */
+.navigation{
+    
+    font-family: Montserrat;
+    font-size: larger;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+/**/
+a{
+    text-decoration: none;
+    color: #6B495A;
+}
+a:hover{
+    
+    text-shadow: 1px 1px 4px rgb(180, 180, 180);
+    color: #7d0600;
+    border-bottom: 2px solid #7d0600;
+}
+a:focus{
+    border-bottom: 2px solid #7d0600;
+    text-shadow: 1px 1px 4px rgb(180, 180, 180);
+    color: #7d0600;
+}
+
+/*الستيل تاع البوتن */
+button{
+    height: 40px;
+    width: 150px;
+    color: #FFEAD7;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: #515676;
+    border: 1px solid #515676;
+    border-radius: 4px;
+    margin-left: 60px;
+}
+button:hover{
+    box-shadow: 2px 2px 8px rgb(44, 44, 44);
+    background-color: #6B495A;
+}
+/**/
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width :768px){
+    header{
+        height: 80px;
+    }
+    img{
+
+        height: 200px;
+    }
+    .navigation {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 10;
+    background: #e6e1d8;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+  }
+
+  .navigation.active {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-right: 30px;
+  }
+  button{
+    margin-right: 50px;
+  }
+
+}

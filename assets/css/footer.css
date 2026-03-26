@@ -1,0 +1,54 @@
+body{
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: rgb(255, 249, 241);
+    height: 250px
+}
+section{
+    height:250px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+.logo_foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    position: relative;
+    margin-top: 100px;
+}
+.logo_foot>img{
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+}
+.logo_foot>p{
+    text-align: center;
+    margin: 0;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 0px 30px 30px 30px;
+    margin-top: 60px;
+}
+#btn_contact{
+    margin-left: 20px;
+}
+.copy{
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.lien a{
+    text-decoration: none !important;
+    border: none;
+}

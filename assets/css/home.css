@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.2;
+    animation: hero ease-in 0.7s ;
+}
+p{
+    animation: hero ease-in 0.7s ;
+}
+.hero::before{
+    content: "";
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+.hero{
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/hero.png) center/cover no-repeat ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 100px;
+    padding-left: 80px;
+    font-weight: 700;
+    
+}
+@keyframes hero{
+    0%{ opacity: 0;}
+    100%{ opacity:1;}
+}
+span{
+    color: red;
+}
+.bt{
+    align-items: left;
+    width: 200px;
+    font-weight: 600;
+    font-size: 17px;
+    background: #ff7a00;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    
+    animation: btn ease-out 0.9s infinite;
+    
+}
+@keyframes btn{
+    from{
+        
+    }
+    to{
+        transform: scale(1.05);
+        
+    }
+}
+.bt:hover{
+    
+    transform: scale(1.05);
+    background: #e96b00;
+}
