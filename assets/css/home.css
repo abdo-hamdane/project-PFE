@@ -9,7 +9,7 @@ h1{
     line-height: 1.2;
     animation: hero ease-in 0.7s ;
 }
-p{
+.hero p{
     animation: hero ease-in 0.7s ;
 }
 .hero::before{
@@ -49,13 +49,11 @@ span{
     border-radius: 8px;
     border: none;
     
-    animation: btn ease-out 0.9s infinite;
+    animation: btn ease 0.4s ;
     
 }
 @keyframes btn{
-    from{
-        
-    }
+   
     to{
         transform: scale(1.05);
         
@@ -65,4 +63,58 @@ span{
     
     transform: scale(1.05);
     background: #e96b00;
+}
+
+/* this part for presentation section */
+
+h2{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+}
+.img_content {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+
+/* COMMON STYLE */
+.img_content>.img {
+  position: absolute;
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* TOP LEFT */
+.pre_2 {
+  top: 0;
+  left: 40px;
+  z-index: 1;
+}
+
+/* CENTER (MAIN IMAGE) */
+.pre_1 {
+  top: 60px;
+  left: 120px;
+  width: 200px;
+  height: 160px;
+  z-index: 3;
+}
+
+/* BOTTOM LEFT */
+.pre_3 {
+  top: 150px;
+  left: 20px;
+  z-index: 2;
 }

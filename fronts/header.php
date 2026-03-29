@@ -13,7 +13,7 @@
         
         <div class="logo">
             <img src="assets/img/ABTrip.svg" alt="logo">
-</div>
+        </div>
         <div class="navigation" id="navigation">
             <a href="home.php">Home</a>
             <a href="#activite">Activite</a>
