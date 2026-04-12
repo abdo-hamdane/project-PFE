@@ -23,7 +23,8 @@ h1{
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/hero.png) center/cover no-repeat ;
+    background: linear-gradient(to right ,rgba(0,0,0,0.8),rgba(0,0,0,0)),url(../img/hero.png) center/cover no-repeat ;
+    background-size: cover;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 100px;
@@ -35,20 +36,24 @@ h1{
     0%{ opacity: 0;}
     100%{ opacity:1;}
 }
-span{
-    color: red;
+#kech{
+    color: #C9A227;
+  
 }
+
+
 .bt{
     align-items: left;
     width: 200px;
     font-weight: 600;
     font-size: 17px;
-    background: #ff7a00;
+    background: #C9A227;
     color: white;
+    margin-top: 50px;
     padding: 10px 25px;
     border-radius: 8px;
     border: none;
-    
+    cursor:pointer ;
     animation: btn ease 0.4s ;
     
 }
@@ -60,12 +65,21 @@ span{
     }
 }
 .bt:hover{
-    
+    transition: ease 0,3s;
     transform: scale(1.05);
-    background: #e96b00;
+    background: orange;
+}
+@media (max-width :768px){
+    .hero{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
 }
 
-/* this part for presentation section */
+/* ********* this part for presentation section *********** */
 
 h2{
     font-weight: 900;
@@ -74,7 +88,7 @@ h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content>p{
-
+    margin-bottom:35px ;
     line-height: 1.2;
 }
 .presentation{
@@ -84,11 +98,19 @@ h2{
     gap: 100px;
     height: 600px;
     width: 100%;
+    padding-bottom: 20px;
 }
 .content{
     width: 400px;
+    
 }
-
+.content li{
+    list-style: none;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+   
+}
 
 .img_content {
   position: relative;
@@ -123,10 +145,10 @@ h2{
     position: absolute;
     border-radius: 5px;
     border: 2px solid white;
-    top: -40px;
-    left: -20px;
-    width: 200px;
-    height: 160px;
+    top: -60px;
+    left: -50px;
+    width: 240px;
+    height: 180px;
     z-index: 1;
     box-shadow: 2px 2px 9px black;
 }
@@ -138,9 +160,154 @@ h2{
     border: 2px solid white;
     top: 250px;
     left: 250px;
+      width: 230px;
+    height: 180px;
     z-index: 2;
     box-shadow: 2px 2px 9px black;
 }
 li{
     padding: 5px;
 }
+@media (max-width :768px){
+    .presentation{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+    .content {
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+    }
+}
+/* ******** Design for the card ****** */ 
+
+.act>h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.activite{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin-top: 15px;
+    
+}
+@keyframes cards{
+    0%{ 
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.card_camel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  animation: cards ease-in-out 2s ;
+}
+
+.card_camel:hover {
+  transform: translateY(-10px);
+}
+
+.card_camel img {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  margin: auto;
+  object-fit:cover;
+}
+
+.card_body {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.card_body h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+.card_body p {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+  
+}
+
+.btn_cards button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  color: #ff7e5f;
+  padding: 10px 20px;
+  margin:5px;
+  cursor: pointer;
+  transition: 0.3s;
+    border: none;
+    float: right;
+}
+
+.btn_cards button:hover {
+  background: #444766;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+/* ********* design ta3 section pic *************************** */
+
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebeff5;
+    padding: 50px opx;
+}
+.carousel {
+  padding: 5px 0px;
+  overflow: hidden;
+  width: 100%;
+  
+
+
+}
+.slides {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+    animation: animation 12s linear infinite;
+}
+.slides img{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@keyframes animation {
+    to{
+        translate: calc(-4*250px);
+    }
+}
+
+

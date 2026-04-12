@@ -1,16 +1,16 @@
 body{
     font-family: Montserrat;
     font-weight: 600;
-    background-color: rgb(255, 249, 241);
     height: 250px
 }
-section{
+.foot{
     height:250px ;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding-bottom: 20px;
+    background-color: rgb(214, 214, 214);
 }
 .logo_foot{
     display: flex;
@@ -19,17 +19,21 @@ section{
     flex-direction: column;
     width: 400px;
     position: relative;
-    margin-top: 100px;
+    padding-top: 15px;
 }
 .logo_foot>img{
     height: 200px;
     position: absolute;
-    bottom: 20px;
+    bottom: 45px;
+    padding-bottom: 10px;
 }
-.logo_foot>p{
+
+.copy_foot>p{
     text-align: center;
     margin: 0;
+    background-color: rgb(214, 214, 214);
 }
+
 .contact{
     display: flex;
     justify-content: center;

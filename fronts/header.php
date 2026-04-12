@@ -16,9 +16,9 @@
         </div>
         <div class="navigation" id="navigation">
             <a href="home.php">Home</a>
-            <a href="#activite">Activite</a>
+            <a href="Activite.php">Activite</a>
             <a href="#cantact">Cantact</a>
-            <button type="button">BOOK NEW</button>
+            <button type="button" id="book_btn">RESERVER</button>
         </div>
         <div class="menu-toggle" id="menuToggle">
             ☰

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
-    <section>
+    <section class="foot">
         <div class="logo_foot">
             <img src="assets/img/ABTrip.svg" alt="logo">
             <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;">" Travel the world with ABTrip "</p>
@@ -26,8 +26,9 @@
             </div>
             <button type="button" id="btn_contact">BOOK NEW</button>
         </div>
-    
     </section>
+    <div class="copy_foot">
     <p class="copy"> &copy; copyright <?php echo date("Y");?> ABTrip . All rights reserved</p>
+</div>
 </body>
 </html>
