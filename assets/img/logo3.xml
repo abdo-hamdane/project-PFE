@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6C36A"/>
+      <stop offset="100%" stop-color="#B8862B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- AB -->
+  <text x="310" y="470"
+        font-family="Poppins, Arial, sans-serif"
+        font-size="180"
+        font-weight="800"
+        fill="url(#goldGradient)">
+        AB
+  </text>
+
+  <!-- Trip -->
+  <text x="610" y="470"
+        font-family="Poppins, Arial, sans-serif"
+        font-size="180"
+        font-weight="800"
+        fill="#161616">
+        Trip
+  </text>
+
+  <!-- Tagline -->
+  <line x1="300" y1="560" x2="430" y2="560"
+        stroke="#B8862B"
+        stroke-width="4"/>
+
+  <text x="455" y="572"
+        font-family="Montserrat, Arial, sans-serif"
+        font-size="38"
+        letter-spacing="8"
+        fill="#3F3F3F">
+        VOYAGEZ PLUS HAUT
+  </text>
+
+  <line x1="1020" y1="560" x2="1150" y2="560"
+        stroke="#B8862B"
+        stroke-width="4"/>
+
+  <!-- Plane -->
+  <path d="M1180 350L1460 260L1320 500L1270 420L1180 350Z"
+        fill="url(#goldGradient)"/>
+
+  <path d="M1270 420L1360 300"
+        stroke="#111111"
+        stroke-width="14"
+        stroke-linecap="round"/>
+
+  <!-- Flight curve -->
+  <path d="M640 650C900 670 1130 590 1260 430"
+        stroke="url(#goldGradient)"
+        stroke-width="7"
+        fill="none"
+        stroke-linecap="round"/>
+
+</svg>

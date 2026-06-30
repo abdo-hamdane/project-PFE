@@ -1,0 +1,117 @@
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    width:280px;
+    height:100vh;
+    background:#fff8e7;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px;
+    transition:0.3s;
+    z-index:1000;
+    box-shadow: 0px 10px 18px rgb(175, 175, 175);
+    
+}
+
+.logoside{
+    text-align:center;
+    margin-bottom:50px;
+    right: 200px;
+}
+
+.logoside img{
+    width:250px;
+    
+    margin-bottom:10px;
+}
+
+.logoside h2{
+    color:#C9A227;
+    font-size:20px;
+    text-decoration: overline;
+}
+
+.menu-side{
+    list-style:none;
+}
+
+.menu-side li{
+    margin:20px 0;
+}
+
+.menu-side li a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size:18px;
+    font-weight: 600;
+    display:block;
+    padding:12px 15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.menu-side li a:hover{
+    background:#C9A227;
+}
+.menu-side li a:active{
+color: white;
+}
+.active a{
+    background:#C9A227;
+}
+.menu-side li .logout a:hover{
+    background: rgb(255, 0, 0);
+}
+
+/* ================= CONTENT ================= */
+
+.container{
+    margin-left:280px;
+    padding:40px;
+    width:calc(100% - 280px);
+    transition:0.3s;
+}
+
+/* ================= MENU BUTTON ================= */
+
+.menu-toggle{
+    display:none;
+    position:sticky;
+    top:20px;
+    left:20px;
+    background:#C9A227;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:22px;
+    z-index:1100;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 900px){
+
+    .sidebar{
+        left:-280px;
+        
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+
+    .container{
+        margin-left:0;
+        width:100%;
+        padding:90px 20px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+        position:sticky;
+    }
+
+}
